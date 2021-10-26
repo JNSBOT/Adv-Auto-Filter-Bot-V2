@@ -24,19 +24,20 @@ async def start(bot, update):
         except UserNotParticipant:
             #await update.reply_text(f"Join @{update_channel} To Use Me")
             await update.reply_text(
-                text=""" <b> ⚠️ YOU ARE NOT SUBSCRIBED OUR CHANNEL⚠️
+                text=""" <b> HEY ,
 
-Join on our channel to get movies ✅
+⭕YOU AREN'T MEMBER OF MY CHANNEL 
 
+TO GET FILES AND CHECK THIS BOT ⭕
 
-⚠️താങ്കൾ ഞങ്ങളുടെ ചാനൽ സബ്സ്ക്രൈബ് ചെയ്തിട്ട് ഇല്ല ! ⚠️
+JOIN :-  👉MY CHANNEL 👈 
 
+🥰AND START AGAIN TO GET FILES 🥰
 
-ഞങ്ങളുടെ ചാനലിൽ ജോയിൻ ചെയ്യതാൽ താങ്കൾക്ക് movies കിട്ടുന്നത് ആണ് ✅
-
-⬇️Channel link⬇️ </b>""",
+TeaM R_Mvz.....
+👇🍿CHANNEL LINK🍿👇</b>""",
                 reply_markup=InlineKeyboardMarkup([
-                    [ InlineKeyboardButton(text="⚡ Join My Channel⚡️", url=f"https://t.me/{update_channel}")]
+                    [ InlineKeyboardButton(text="⚡⭕JOIN THIS CHANNEL⭕⚡️", url=f"https://t.me/{update_channel}")]
               ])
             )
             return
@@ -66,7 +67,7 @@ Join on our channel to get movies ✅
                         [
                             InlineKeyboardButton
                                 (
-                                    'Developers', url="https://t.me/JNS_BOTS"
+                                    'Developers', url="https://t.me/REQUEST_MOviz"
                                 )
                         ]
                     ]
@@ -85,7 +86,7 @@ Join on our channel to get movies ✅
                         [
                             InlineKeyboardButton
                                 (
-                                    'Developers', url="https://t.me/jns_bots"
+                                    'Developers', url="https://t.me/REQUEST_MOviz"
                                 )
                         ]
                     ]
@@ -104,7 +105,7 @@ Join on our channel to get movies ✅
                         [
                             InlineKeyboardButton
                                 (
-                                    'Developers', url="https://t.me/jns_bots"
+                                    'Developers', url="https://t.me/REQUEST_MOviz"
                                 )
                         ]
                     ]
@@ -117,12 +118,12 @@ Join on our channel to get movies ✅
         return
 
     buttons = [[
-        InlineKeyboardButton('Developers', url='https://t.me/jns_bots'),
-        InlineKeyboardButton('Source Code 🧾', url ='https://t.me/https://t.me/githubsoursecode')],                               
+        InlineKeyboardButton('Developed By', url='https://t.me/REQUEST_MOviz'),
+        InlineKeyboardButton('Source Code', url ='https://t.me/harshsoni_008/8')],                               
      [
-        InlineKeyboardButton('Support 🛠', url='https://t.me/jns_fc_bots')
+        InlineKeyboardButton('Support 24×7 ✅', url='https://t.me/REQUEST_M0viz_2')
     ],[
-        InlineKeyboardButton('Help ⚙', callback_data="help")
+        InlineKeyboardButton('NEED HELP 🤔', callback_data="help")
     ]]
     
     reply_markup = InlineKeyboardMarkup(buttons)
@@ -141,10 +142,10 @@ Join on our channel to get movies ✅
 @Client.on_message(filters.command(["help"]) & filters.private, group=1)
 async def help(bot, update):
     buttons = [[
-        InlineKeyboardButton('Home ⚡', callback_data='start'),
-        InlineKeyboardButton('About 🚩', callback_data='about')
+        InlineKeyboardButton('BACK TO MAIN', callback_data='start'),
+        InlineKeyboardButton('ABOUT MEH 🤓', callback_data='about')
     ],[
-        InlineKeyboardButton('Close 🔐', callback_data='close')
+        InlineKeyboardButton('Close🤦', callback_data='close')
     ]]
     
     reply_markup = InlineKeyboardMarkup(buttons)
@@ -163,8 +164,8 @@ async def help(bot, update):
 async def about(bot, update):
     
     buttons = [[
-        InlineKeyboardButton('Home ⚡', callback_data='start'),
-        InlineKeyboardButton('Close 🔐', callback_data='close')
+        InlineKeyboardButton('BACK TO MAIN', callback_data='start'),
+        InlineKeyboardButton('Close🤦', callback_data='close')
     ]]
     reply_markup = InlineKeyboardMarkup(buttons)
     
